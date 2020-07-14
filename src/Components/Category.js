@@ -1,22 +1,32 @@
-import React from 'react'
-import MainGridBrand from './MainGrid'
+import React, { Component } from 'react'
+import CategoryMainGrid from './CategoryMainGrid'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import MenFashion from './MenFashion'
+import WomenFashion from './WomenFashion'
+import CategorySidePanel from './CategorySidePanel'
 
+export class Category extends Component {
 
-export default function Category() {
-    return (
-        <div>
-           <div className="left tab">
-                
-                <button className="tablinks" onclick="openCity(event, 'London')">London</button>
-                <button className="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                <button className="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    
+
+    render() {
+        return (
+            <Router >
+            <div>
+            <div className="left tab">
+                <CategorySidePanel />
             </div>
-
+           
             <div className="right">
-                
-                <MainGridBrand />
-            </div>
-
-        </div>
-    )
+                <Route exact path="/category/menfashion" Component={MenFashion} >        <MenFashion />      </Route>
+                <Route exact path="/category/womenfashion" Component={WomenFashion} >    <WomenFashion />    </Route>
+                <Route exact path="/category" Component={CategoryMainGrid} > <CategoryMainGrid />    </Route>
+             </div>
+ 
+         </div>
+         </Router>
+        )
+    }
 }
+
+export default Category

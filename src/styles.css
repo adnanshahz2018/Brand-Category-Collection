@@ -4,6 +4,7 @@ nav {
     background: blue;
 }
 
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -14,6 +15,26 @@ nav {
     color: white;
 }
 
+.productlinks {
+    /* display: flex; */
+    list-style: none;
+    width: 20%;
+    height: unset;
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.panel {
+    font-size: 1.2em;
+    display:inline-block;
+    cursor:pointer;
+    vertical-align:middle;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+}
 .link {
     color: white;
     text-decoration: none;

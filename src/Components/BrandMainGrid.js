@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function MainGridBrand() {
+export default function BrandMainGrid() {
     return (
         <div className="container-wrapper">
             <div className="portfolio-items-wrapper">

@@ -1,5 +1,4 @@
 
-
 .tab {
     float: left;
     background-color: #f1f1f1;
@@ -25,20 +24,34 @@
     background-color: #ddd;
   }
 
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+  }
+
   .left {
     left: 0;
     z-index: 1;
-    width: 20%;   
-    height: max-content;
+    width: 10%;   
+    height: 100%;
     position: absolute;
     background-color: grey;
   }
   
   .right { 
     right: 0;
+    padding-top: 0px;
     z-index: 1;
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: auto;
     position: absolute;
   }
   
