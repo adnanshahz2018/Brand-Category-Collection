@@ -1,0 +1,24 @@
+
+Brand Category Collection
+
+1. NavBar
+    a. Home
+    b. Brands
+    c. Category {Clothes}
+    d. Site-Info {About, Contact}
+
+2. SideBar {Selected: Category-> Clothes}
+    Show the Brands for Clothes in the SideBar/Panel
+
+3. Main View 
+    a. Selected: Home
+
+    b. Selected: Brands
+
+    c. Selected: Category
+
+    d. Selected: Site-Info
+
+4. Footer 
+
+.....
