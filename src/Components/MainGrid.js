@@ -131,7 +131,7 @@ export default function MainGridBrand() {
                         <div className="logo-wrapper">
                         </div>
                         <div className="subtitle">
-                           <h3>third right </h3>
+                           <h3>3rd right </h3>
                         </div>
                     </div>
                 </div>

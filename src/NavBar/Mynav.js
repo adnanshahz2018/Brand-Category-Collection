@@ -7,10 +7,10 @@ export default function Mynav() {
         <div>
             <nav className="nav">
                 <ul className="nav-links">
-                    <Link className="link" to='/'>           Home        </Link>
-                    <Link className="link" to='/brand'>      Brand       </Link>
-                    <Link className="link" to='/category'>   Category    </Link> 
-                    <Link className="link" to='/about' >    Site Info   </Link>
+                    <Link className="link" to='/'>           Home           </Link>
+                    <Link className="link" to='/brand'>      Brands         </Link>
+                    <Link className="link" to='/category'>   Categories     </Link> 
+                    <Link className="link" to='/about' >     Site Info      </Link>
                 </ul>
                
             </nav>

@@ -1,9 +1,22 @@
 import React from 'react'
+import MainGridBrand from './MainGrid'
+
 
 export default function Category() {
     return (
         <div>
-            Here we will show the Category, like Clothes, Accessories etc.
+           <div className="left tab">
+                
+                <button className="tablinks" onclick="openCity(event, 'London')">London</button>
+                <button className="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button className="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            </div>
+
+            <div className="right">
+                
+                <MainGridBrand />
+            </div>
+
         </div>
     )
 }
