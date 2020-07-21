@@ -10,15 +10,12 @@ import About from './Components/About';
 export class App extends Component {
   render() {
     return (
-     <Router>      
-       <div>
+     <Router> 
           <Mynav />
           <Route exact path="/" Component={Home} > <Home /> </Route>
           <Route exact path="/brand" Component={Brand} > <Brand /> </Route>
           <Route exact path="/category" Component={Category} > <Category /> </Route>
           <Route exact path="/about" Component={About} > <About /> </Route>
-        
-      </div>
       </Router>
 
     )
