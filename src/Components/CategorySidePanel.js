@@ -4,12 +4,16 @@ import '../styles.css'
 
 export default function CategorySidePanel() {
     return (
-        <div>
-            <ul className="productlinks">
-                   <Link className="link panel" to='/category'>   Default     </Link> 
-                   <Link className="link panel"  to='/category/menfashion'>   Men    </Link> 
-                   <Link className="link panel" to='/category/womenfashion' >     Women    </Link>
-               </ul>
-        </div>
+            <table className="productlinks">
+                <tr className="panel_links" >
+                    <Link className="link" to='/category'>   Men     </Link> 
+                </tr>
+                <tr className="panel_links" >
+                   <Link className="link"  to='/category/womenfashion'>   Women    </Link> 
+                </tr>
+                <tr className="panel_links" >
+                   <Link className="link" to='/category/decoration' >     Decoration    </Link>
+                </tr>
+               </table>
     )
 }
