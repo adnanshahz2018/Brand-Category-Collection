@@ -1,9 +1,9 @@
 
 nav {
     height: 10vh;
-    background: blue;
+    align-self: start;
+    background: rgb(199, 199, 202);
 }
-
 
 .nav-links {
     display: flex;
@@ -17,28 +17,40 @@ nav {
 
 .productlinks {
     /* display: flex; */
-    list-style: none;
-    width: 20%;
+    list-style: disc;
+    width: 100%;
     height: unset;
-    padding-top: 10px;
+    /* padding-top: 20px; */
     justify-content: space-around;
     align-items: center;
     color: white;
 }
 
-.panel {
-    font-size: 1.2em;
+.panel_links {
+    font-size: 1.25em;
+    width: inherit;
     display:inline-block;
     cursor:pointer;
-    vertical-align:middle;
-    max-width: 100px;
-    padding: 5px;
+    height: 5vh;
+    padding-left: 5px;
     text-align: center;
 }
+
+.panel_links:hover {
+    color: rgb(12, 141, 50);
+    background-color: rgb(152, 152, 189);
+}
+
 .link {
-    color: white;
+    color: rgb(40, 40, 78);
     text-decoration: none;
+    align-items: left;
+    text-size-adjust: inherit;
     
+}
+
+.link:hover {
+    color: rgb(12, 141, 50);
 }
 
 .authorname {
@@ -63,49 +75,13 @@ nav {
     background-color: green;
 }    
 
-.navbar{
-    display: flex;
-    justify-content: space-between ;
-    padding: 30px;
-}
-
-.leftnavdiv{
-    display: flex;
-}
-
-.navbar > .leftnavdiv > div {
-    margin-right: 20px;
-    font-size: .9em;
-    text-transform: uppercase;
-    justify-items: center;
-}
-
-.navlinks {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s ;
-}
-
-.navlinks a{
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.navlinks:hover{
-    border-bottom: 1px solid green;
-}
-
-.navlinks a:hover{
-    color: red;
-}
-
 .portfolio-items-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .portfolio-item-wrapper{
+    height: 50%;
     position: relative;
 
 }
@@ -118,10 +94,10 @@ nav {
 }
 
 .portfolio-img-background{
-    height: 300px;
+    height: 320px;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat ;
 }
 
@@ -143,7 +119,7 @@ nav {
     width: 50%;
     visibility: hidden;
 }
-/* make it more specific wrt to selector */
+
 .img-text-wrapper .subtitle{
     transition: 0.1s;
     font-weight: 600;
@@ -156,16 +132,25 @@ nav {
     width: 50%;
 }
 
-.img-text-wrapper:hover .subtitle{
+a {
+    color: transparent;
+    text-decoration: none;
+}
+.img-text-wrapper:hover .subtitle h3 a{
     font-weight: 600 ;
+    visibility: visible;
     color: lightseagreen;
 }
 
+/* .subtitle h3 a{
+    font-weight: 600 ;
+    text-decoration: none;
+    color: lightseagreen;
+} */
 .img-darken{
     transition: 0.5s;
     filter: brightness(10%);
 }
 
 
-/*  */
 /*  */
