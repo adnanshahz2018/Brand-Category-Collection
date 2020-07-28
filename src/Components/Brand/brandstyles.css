@@ -1,0 +1,145 @@
+
+nav {
+    height: 10vh;
+    align-self: start;
+    background: rgb(199, 199, 202);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 20%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.productlinks {
+    /* display: flex; */
+    list-style: disc;
+    width: 100%;
+    height: unset;
+    /* padding-top: 20px; */
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.panel_links {
+    font-size: 1.1em;
+    width: inherit;
+    display:inline-block;
+    cursor:pointer;
+    height: 5vh;
+    padding-left: 0;
+    text-align: left;
+}
+
+
+.panel_links:hover {
+    color: rgb(12, 141, 50);
+    background-color: rgb(152, 152, 189);
+    font-size: 1.2em;
+    padding-left: 5px;
+    transition: .3s ease-in-out;
+}
+
+.link {
+    color: rgb(40, 40, 78);
+    text-decoration: none;
+    align-items: left;
+    text-size-adjust: inherit;
+    
+}
+
+.nav-links .link:hover {
+    /* color: rgb(12, 141, 50); */
+    color: rgb(10, 163, 156);
+    font-size: 1.2em;
+    font: bold;
+    transition: .3s;
+}
+
+
+.authorname {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.placeholder{
+    background-color: red;
+}
+
+.second{
+    background-color: green;
+}    
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    height: 50%;
+    position: relative;
+
+}
+
+.portfolio-item-wrapper:hover .portfolio-img-background{
+    transition: 0.5s;
+    filter: brightness(30%);
+    position: relative;
+
+}
+
+.portfolio-item-wrapper:hover .img-text-wrapper .subtitle h3 a{
+    font-weight: 600 ;
+    visibility: visible;
+    color: lightseagreen;
+}
+.portfolio-img-background{
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat ;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+a {
+    color: transparent;
+    text-decoration: none;
+}
+
+.img-darken{
+    transition: 0.5s;
+    filter: brightness(10%);
+}
+
+
+/*  */
