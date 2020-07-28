@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Mynav from './NavBar/Mynav';
 import Home from './Components/Home';
-import Brand from './Components/Brand'
-import Category from './Components/Category'
+import Brand from './Components/Brand/Brand'
+import Category from './Components/Category/Category'
 import About from './Components/About';
 
 export class App extends Component {
