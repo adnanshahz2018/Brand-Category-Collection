@@ -1,22 +1,22 @@
 
-  .left {
+  .brandleft {
     left: 0;
     z-index: 1;
     width: 10%;   
-    height: 600px;
+    height: 100%;
     overflow-y: scroll;
     position: absolute;
     /* align-items: center; */
     background-color: rgb(199, 199, 202);
   }
   
-  .right { 
+  .brandright { 
     right: 0;
-    padding-top: 0px;
+    padding-top: 0;
     z-index: 1;
     width: 90%;
     height: 600px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     position: absolute;
   }
   
