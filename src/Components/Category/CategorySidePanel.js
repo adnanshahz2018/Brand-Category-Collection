@@ -5,15 +5,21 @@ import '../../styles.css'
 export default function CategorySidePanel() {
     return (
             <table className="productlinks">
-                <tr className="panel_links" >
-                    <Link className="link" to='/category'>   Men     </Link> 
-                </tr>
-                <tr className="panel_links" >
-                   <Link className="link"  to='/category/womenfashion'>   Women    </Link> 
-                </tr>
-                <tr className="panel_links" >
-                   <Link className="link" to='/category/decoration' >     Decor   </Link>
-                </tr>
+                <Link className="link panel" to='/category'> 
+                    <tr className="panel_links" >
+                        Men     
+                    </tr>
+                </Link> 
+                <Link className="link panel"  to='/category/womenfashion'>
+                    <tr className="panel_links" >
+                        Women     
+                    </tr>
+                </Link>
+                <Link className="link panel" to='/category/decoration' >  
+                    <tr className="panel_links" >
+                        Decor   
+                    </tr>
+                </Link>
                </table>
     )
 }

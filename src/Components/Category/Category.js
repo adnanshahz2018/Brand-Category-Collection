@@ -4,6 +4,7 @@ import MenFashion from './MenFashion'
 import WomenFashion from './WomenFashion'
 import CategorySidePanel from './CategorySidePanel'
 import Decoration from './Decoration'
+import '../../gridstyles.css'
 
 export class Category extends Component {
     render() {
