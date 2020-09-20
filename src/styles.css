@@ -1,7 +1,7 @@
 
 nav {
     height: 10vh;
-    align-self: start;
+    /* align-self: start; */
     background: rgb(199, 199, 202);
     
 }
@@ -21,14 +21,14 @@ nav {
     /* display: flex; */
     list-style: disc;
     width: 100%;
-    height: unset;
+    /* height: unset; */
     /* padding-top: 20px; */
     justify-content: space-around;
     align-items: center;
     color: white;
 }
 
-.panel_links {
+.panel {
     font-size: 1.1em;
     width: inherit;
     display:inline-block;
@@ -39,11 +39,10 @@ nav {
 }
 
 
-.panel_links:hover {
+.panel:hover {
     color: rgb(12, 141, 50);
     background-color: rgb(152, 152, 189);
-    font-size: 1.2em;
-    padding-left: 5px;
+    padding-left: 1px;
     transition: .3s ease-in-out;
 }
 
@@ -62,16 +61,6 @@ nav {
     font-size: 1.2em;
     font: bold;
     transition: .3s;
-}
-
-
-.authorname {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-    color: white;
 }
 
 .container{
@@ -118,7 +107,7 @@ nav {
 }
 
 .portfolio-img-background{
-    height: 320px;
+    height: 50%;
     width: 100%;
     background-size: cover;
     /* background-position: center; */
