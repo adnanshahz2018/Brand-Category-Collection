@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    text-decoration: none;
+ }
+ 
+ .sidebar {
+     left: -150px;
+     position: fixed;
+     width: 150px;
+     height: 100%;
+     transition: .5s;
+     overflow-y: scroll;
+     background-color: lightseagreen;
+ }
+ 
+ .sidebar header{
+     font-size: 20px;
+     text-align: center;
+     background: lightslategray;
+     line-height: 60px;
+     user-select: none;
+ }
+ 
+ .navbar {
+     left: 10px;
+     top: 10px;
+     width: 5%;
+     border-radius: 2rem;
+     border: 1px solid rgb(195, 195, 212);
+     position: absolute;
+     background-color: lightblue;
+     font-size: larger;
+ }
+ 
+ .navbar:hover ~ .sidebar {
+     left: 0;
+     transition: .5s;
+ }
+ 
+ .sidebar:hover {
+     left: 0;
+     transition: .5s;
+ }
+ 
+ 
+ .navbar:hover ~ section{
+     margin-left: 150px;
+     transition: .5s;
+ }
+ 
+ .sidebar:hover ~ section{
+     margin-left: 150px;
+     transition: .5s;
+ }
+ 
+ .sidebar ul a {
+     width: 100%;
+     font-size: 1.2em;
+     display: block;
+     color: white;
+     padding-left: 20px;
+     padding-top: 20px;
+     padding-bottom: 2px;
+     transition: .4s;
+     box-sizing: border-box;
+     border-bottom: 1px solid rgb(0, 128, 128);
+ }
+ 
+ a:hover {
+     background-color: lightblue;
+     transition: .5s;
+ }
+ 
+ li {
+     height: 40px;
+     transition: .5s;
+ }
+ 
+ a:hover li{
+     font-size: 1.4em;
+     transition: .5s;
+ }
+ 
+ section{
+     background: url(bg1.jpg) no-repeat; 
+     background-position: center;
+     background-size:cover ; 
+     transition: .5s;
+     height: 100vh;
+ 
+ }
+ 
+ 
+ /* End of File */
